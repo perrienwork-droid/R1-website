@@ -31,21 +31,7 @@
     <ul class="nav-links" id="navLinks">
       <li><a href="study.html">The Study</a></li>
       <li><a href="how-it-works.html">How It Works</a></li>
-      <li class="nav-dropdown">
-        <button class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true">Who it&rsquo;s for <svg viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg></button>
-        <ul class="nav-dropdown__menu">
-          <li><a href="organizations.html">Organizations</a></li>
-          <li><a href="parents.html">Parents</a></li>
-          <li><a href="coaches.html">Coaches</a></li>
-        </ul>
-      </li>
-      <li class="nav-dropdown">
-        <button class="nav-dropdown__trigger" aria-expanded="false" aria-haspopup="true">About <svg viewBox="0 0 10 6" width="10" height="6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M1 1l4 4 4-4"/></svg></button>
-        <ul class="nav-dropdown__menu">
-          <li><a href="readiness.html">What Is Readiness?</a></li>
-          <li><a href="about.html">Our Team &amp; Mission</a></li>
-        </ul>
-      </li>
+      <li><a href="about.html">About</a></li>
       <li><a href="blog.html">Insights</a></li>
       <li><a href="contact.html" class="nav-active">Contact</a></li>
       <li><a href="support.html" class="btn btn--primary">Support R1</a></li>
@@ -84,7 +70,7 @@
           <span class="contact-cal__bar-text">Start with 30 minutes.<br>Every conversation begins here.</span>
         </div>
         <div class="contact-cal__embed">
-          <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-30min"></div>
+          <div style="width:100%;height:100%;overflow:scroll" id="my-cal-inline-meeting-with-matt"></div>
         </div>
       </div>
     </div>
@@ -95,23 +81,22 @@
   </div>
 </section>
 
-<!-- Cal embed script -->
 <script type="text/javascript">
 (function (C, A, L) { let p = function (a, ar) { a.q.push(ar); }; let d = C.document; C.Cal = C.Cal || function () { let cal = C.Cal; let ar = arguments; if (!cal.loaded) { cal.ns = {}; cal.q = cal.q || []; d.head.appendChild(d.createElement("script")).src = A; cal.loaded = true; } if (ar[0] === L) { const api = function () { p(api, arguments); }; const namespace = ar[1]; api.q = api.q || []; if(typeof namespace === "string"){cal.ns[namespace] = cal.ns[namespace] || api;p(cal.ns[namespace], ar);p(cal, ["initNamespace", namespace]);} else p(cal, ar); return;} p(cal, ar); }; })(window, "https://app.cal.com/embed/embed.js", "init");
-Cal("init", "30min", {origin:"https://the-ready-collective.cal.com"});
-Cal.ns["30min"]("inline", {
-  elementOrSelector:"#my-cal-inline-30min",
+Cal("init", "meeting-with-matt", {origin:"https://the-ready-collective.cal.com"});
+Cal.ns["meeting-with-matt"]("inline", {
+  elementOrSelector:"#my-cal-inline-meeting-with-matt",
   config: {"layout":"month_view","useSlotsViewOnSmallScreen":"true"},
-  calLink: "mkritz/30min",
+  calLink: "mkritz/meeting-with-matt",
 });
-Cal.ns["30min"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
+Cal.ns["meeting-with-matt"]("ui", {"hideEventTypeDetails":false,"layout":"month_view"});
 </script>
 <footer class="site-footer" role="contentinfo">
   <div class="container">
     <div class="footer-grid">
       <div class="footer-brand"><a href="index.html" class="nav-logo"><span class="logo-mark">R1</span>ReadyFirst</a><p>The first accessible readiness monitoring system for youth athletes. Making readiness visible across Mind, Body, and Energy.</p></div>
-      <div class="footer-col"><h4>Learn</h4><ul><li><a href="readiness.html">What Is Readiness?</a></li><li><a href="how-it-works.html">How It Works</a></li><li><a href="study.html">The Study</a></li><li><a href="about.html">About R1</a></li><li><a href="blog.html">Insights</a></li></ul></div>
-      <div class="footer-col"><h4>For You</h4><ul><li><a href="parents.html">Parents</a></li><li><a href="coaches.html">Coaches</a></li><li><a href="organizations.html">Organizations</a></li><li><a href="support.html" class="btn btn--primary btn--sm">Support R1</a></li></ul></div>
+      <div class="footer-col"><h4>Learn</h4><ul><li><a href="how-it-works.html">How It Works</a></li><li><a href="study.html">The Study</a></li><li><a href="about.html">About R1</a></li><li><a href="blog.html">Insights</a></li></ul></div>
+      <div class="footer-col"><h4>Get Involved</h4><ul><li><a href="support.html">Support R1</a></li></ul></div>
       <div class="footer-col"><h4>Connect</h4><ul><li><a href="contact.html">Contact</a></li><li><a href="faq.html">FAQ</a></li></ul></div>
     </div>
     <div class="footer-bottom"><p>&copy; 2026 The Ready Collective, Inc.</p><div><a href="#">Privacy</a> &middot; <a href="#">Terms</a></div></div>
