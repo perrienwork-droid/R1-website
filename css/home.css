@@ -201,7 +201,7 @@
   .hero__content{max-width:100%}
   .hero__sub{margin:0 auto 2.25rem}
   .hero__actions{justify-content:center}
-  .hero__bg-placeholder{transform:none;background-position:70% center}
+  .hero__bg-placeholder{transform:none;background-position:25% top}
   .audience-grid{grid-template-columns:1fr}
   .audience-grid--trio{grid-template-columns:1fr}
   .team-row{grid-template-columns:1fr}
